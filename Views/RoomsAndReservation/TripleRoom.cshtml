@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "TripleRoom";
+    Layout = "~/Views/Shared/_MainFE.cshtml";
+}
+
+
+
+@Html.Partial("_RRNavigationBar")
+
+
+<header id="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 m-auto text-center">
+                <h1>Triple Rooms</h1>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<section id="gallery" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Check out photos for Triple rooms</h3>
+        <p class="text-center">Check out photos</p>
+        <div class="row mb-4">
+            <div class="col-md-4 ">
+
+                <a href="~/img/triple/1tr.jpg" data-lightbox="photos">
+                    <img class="img-fluid border border-warning" src="~/img/triple/1tr.jpg">
+                </a>
+
+            </div>
+
+
+            <div class="col-md-4 ">
+                <a href="~/img/triple/2tr.jpg" data-lightbox="photos">
+                    <img class="img-fluid border border-warning" src="~/img/triple/2tr.jpg">
+                </a>
+
+            </div>
+
+            <div class="col-md-4">
+                <a href="~/img/triple/3tr.jpg" data-lightbox="photos">
+                    <img class="img-fluid border border-warning" src="~/img/triple/3tr.jpg">
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+<!--The Next part of code has been renderd for organizing purposes ...
+in actual site Rooms facilities differ depanding on room type,
+so i did so just in this case
+
+-->
+@Html.Partial("_RoomsFacilities")
+<div class="text-center">
+    <a href="~/RoomsAndReservation/Resevation" class="btn btn-danger btn-lg">Book Triple Room Now</a>
+
+</div>
+	  </br>
+
+
+
+
+
+@Html.Partial("~/Views/Index/_Footer.cshtml")
+
+

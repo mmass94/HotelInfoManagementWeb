@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Promotion";
+    Layout = "~/Views/Shared/_MainFE.cshtml";
+}
+
+@Html.Partial("_PNavigationBar")
+
+
+<header id="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 m-auto text-center">
+                <h1>Promotion</h1>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+<section id="gallery" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Check out Our Promotions</h3>
+        <p class="text-center">Check out photos</p>
+        <div class="row mb-4">
+            <div class="col-md-4 ">
+
+                <a href="~/img/promotion/p1.jpg" data-lightbox="photos">
+                    <img class="img-fluid border border-warning" src="~/img/promotion/p1.jpg">
+                </a>
+
+            </div>
+
+
+            <div class="col-md-4 ">
+                <a href="~/img/promotion/p2.jpg" data-lightbox="photos">
+                    <img class="img-fluid border border-warning" src="~/img/promotion/p2.jpg">
+                </a>
+
+            </div>
+
+            <div class="col-md-4">
+                <a href="~/img/promotion/p3.jpg" data-lightbox="photos">
+                    <img class="img-fluid border border-warning" src="~/img/promotion/p3.jpg">
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+@Html.Partial("~/Views/Index/_Footer.cshtml")

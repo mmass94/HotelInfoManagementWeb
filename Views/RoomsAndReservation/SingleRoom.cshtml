@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "SingleRoom";
+    Layout = "~/Views/Shared/_MainFE.cshtml";
+}
+
+
+
+@Html.Partial("_RRNavigationBar")
+
+
+
+
+<header id="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 m-auto text-center">
+                <h1>Single Rooms</h1>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<section id="gallery" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Check out photos for single rooms</h3>
+        <p class="text-center">Check out photos</p>
+        <div class="row mb-4">
+
+
+            <div class="col-md-4 ">
+
+                <a href="~/img/single/1s.jpg" data-lightbox="photos">
+                    <img class="img-fluid border border-warning" src="~/img/single/1s.jpg">
+                </a>
+
+            </div>
+
+
+            <div class="col-md-4 ">
+                <a href="~/img/single/2s.jpg" data-lightbox="photos">
+                    <img class="img-fluid border border-warning" src="~/img/single/2s.jpg">
+                </a>
+
+            </div>
+
+            <div class="col-md-4">
+                <a href="~/img/single/3s.jpg" data-lightbox="photos">
+                    <img class="img-fluid border border-warning" src="~/img/single/3s.jpg">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+@Html.Partial("_RoomsFacilities")
+<div class="text-center">
+    <a href="~/RoomsAndReservation/Resevation" class="btn btn-danger btn-lg">Book Single Room Now</a>
+
+</div>
+
+    </br>
+
+
+
+@Html.Partial("~/Views/Index/_Footer.cshtml")
+
+
+

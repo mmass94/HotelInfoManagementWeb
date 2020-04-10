@@ -1,0 +1,161 @@
+﻿
+@{
+    ViewBag.Title = "Resevation";
+    Layout = "~/Views/Shared/_MainFE.cshtml";
+}
+
+@Html.Partial("_RRNavigationBar")
+
+
+<div class="hotel_reserve_box">
+    <h3> Select Room  Detalils </h3><br>
+    <form>
+
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" name="bday" max="3000-12-31"
+                   min="1000-01-01" class="form-control">
+
+        </div>
+
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" name="bday" max="3000-12-31"
+                   min="1000-01-01" class="form-control">
+
+        </div>
+
+        <div class="form-group">
+            <label>Your Email</label>
+            <input type="text" name="bday" max="3000-12-31"
+                   min="1000-01-01" class="form-control">
+
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" name="bday" max="3000-12-31"
+                   min="1000-01-01" class="form-control">
+
+        </div>
+
+
+
+
+        <div class="form-group">
+            <label>Room Number-Check Rooms Which are available:</label>
+            <select class="form-control" id="room_type" onchange="finalCost()">
+                <option value="0" selected >Family Rooms -First Floor</option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3</option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5  </option>
+                <option value="6"> 6 </option>
+
+                <option value="0">Double Rooms -First Floor</option>
+                <option value="7">  7 </option>
+                <option value="8">  8 </option>
+                <option value="9">  9 </option>
+                <option value="10"> 10 </option>
+                <option value="11"> 11 </option>
+                <option value="12"> 12 </option>
+
+
+                <option value="0">Single Rooms -Second Floor</option>
+                <option value="13"> 13 </option>
+                <option value="14"> 14 </option>
+                <option value="15"> 15 </option>
+                <option value="16"> 16 </option>
+                <option value="17"> 17  </option>
+                <option value="18"> 18 </option>
+                <option value="0">Twin Rooms -Second Floor</option>
+                <option value="19"> 19 </option>
+                <option value="20"> 20 </option>
+                <option value="21"> 21 </option>
+                <option value="22"> 22 </option>
+                <option value="23"> 23  </option>
+                <option value="24"> 24  </option>
+
+
+                <option value="0">Triple Rooms -Third Floor</option>
+                <option value="25"> 25  </option>
+                <option value="26"> 26  </option>
+                <option value="27"> 27  </option>
+                <option value="28"> 28  </option>
+                <option value="29"> 29  </option>
+                <option value="30"> 30  </option>
+
+                <option value="0">Quadruple Rooms -Third Floor</option>
+                <option value="31"> 31  </option>
+                <option value="32"> 32  </option>
+                <option value="33"> 33  </option>
+                <option value="34"> 34  </option>
+                <option value="35"> 35  </option>
+                <option value="36"> 36  </option>
+
+
+            </select>
+        </div>
+
+
+
+
+
+
+        <div class="form-group">
+            <label>Check In Date</label>
+            <input type="date" name="bday" max="3000-12-31"
+                   min="1000-01-01" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Check Out Date</label>
+            <input type="date" name="bday" min="1000-01-01"
+                   max="3000-12-31" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Number of Adults</label>
+            <select class="form-control" id="person_number" onchange="finalCost()">
+                <option value="0"> 0 </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+                <option value="6"> 6 </option>
+                <option value="7"> 7 </option>
+            </select>
+        </div>
+
+
+
+       
+        
+        <br>
+
+
+
+
+        <div class="form-group">
+            <label>Total Cost ($) : </label>
+
+            <span id="result" style="background-color: #004d59;color: #fff;padding: 6px 70px;font-weight: 600;font-size: 18px;
+				 margin-left: 10px;border-radius: 5px;">0</span>
+        </div>
+
+
+
+    </form>
+</div>
+
+
+<div class="text-center">
+    <a href="#" class="btn btn-danger btn-lg">Reserve</a>
+</div>
+
+    </br>
+@Html.Partial("~/Views/Index/_Footer.cshtml")
+
+
+
